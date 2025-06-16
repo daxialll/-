@@ -1,11 +1,8 @@
-#include "mainwindow.h"
+#include "Game.h"
 
-#include <QApplication>
-
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    return a.exec();
+int main() {
+    system("mode con cols=80 lines=30");
+    Game g;
+    g.Run();
+    return 0;
 }
